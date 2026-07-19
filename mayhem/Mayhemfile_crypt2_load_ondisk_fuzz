@@ -1,0 +1,9 @@
+project: savantenvs/cryptsetup
+target: crypt2_load_ondisk_fuzz
+cmds:
+  - cmd: /mayhem/crypt2_load_ondisk_fuzz
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/crypt2_load_ondisk_fuzz.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/crypt2_load_ondisk_fuzz/testsuite
