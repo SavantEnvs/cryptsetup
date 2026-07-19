@@ -1,0 +1,5 @@
+project: savantenvs/cryptsetup
+target: crypt_load_misc_fuzz
+cmds:
+  - cmd: /mayhem/crypt_load_misc_fuzz
+    libfuzzer: true
